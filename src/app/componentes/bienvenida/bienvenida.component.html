@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bienvenida.component.css">
+</head>
+<body>
+    <div class="screen screen-welcome">
+        <div class="overlay">
+            <h1>¡BIENVENIDO!</h1>
+            <p>Selecciona tu área</p>
+            <div class="options">
+                <div class="option-container">
+                    <a [routerLink]="['/AdminLogin']" class="btn btn-transparent">
+                        <div class="option">
+                            <span class="bi bi-person-fill"></span>
+                            <p>Administración</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="option-container">
+                    <a [routerLink]="['/VentasLogin']" class="btn btn-transparent">
+                        <div class="option">
+                            <span class="bi bi-cart-fill"></span>
+                            <p>Ventas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                  
+        </div>
+    </div>
+</body>
+</html>

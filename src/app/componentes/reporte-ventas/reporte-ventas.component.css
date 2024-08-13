@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.back-button {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.website-title {
+    font-size: 16px;
+    color: #888;
+}
+
+.logout {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px; 
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 40px; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group select,
+.form-group input {
+    padding: 12px; 
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.observation {
+    flex: 1;
+    margin-bottom: 20px;
+    margin-left: 40px; 
+}
+
+.observation textarea {
+    height: 250px; 
+    width: 100%;
+    padding: 12px; 
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.right-column {
+    flex: 1;
+    margin-left: 40px; 
+}
+
+.button-group {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.generate-button, .cancel-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.generate-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cancel-button {
+    background-color: #ff4b4b;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}

@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="table-container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Usuarios</h2>
+            <div class="search-box">
+                <input class="form-control" type="text" placeholder="Buscar">
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo Electrónico</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Sucursal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios">
+                    <td>{{ usuario.nombre }}</td>
+                    <td>{{ usuario.email }}</td>
+                    <td>{{ usuario.contrasena }}</td>
+                    <td>{{ usuario.sucursal }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

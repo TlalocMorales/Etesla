@@ -1,0 +1,26 @@
+.table-container {
+    margin-top: 20px;
+}
+.custom-badge {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.search-box {
+    max-width: 300px;
+}
+.header-btn {
+    background: #f8f9fa;
+    border: none;
+    color: #007bff;
+}
+.header-btn:hover {
+    color: #0056b3;
+}
+.table thead th {
+    border-bottom: none;
+}
+.table tbody td {
+    border-top: none;
+}

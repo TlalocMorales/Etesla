@@ -1,0 +1,91 @@
+<div class="content">
+    <aside class="sidebar">
+        <h3>Cotizaciones</h3>
+        <ul class="quote-list">
+            <li>
+                <input type="checkbox">
+                <span class="icon"></span>
+                <div class="quote-info">
+                    <p>Residencial</p>
+                    <p>00/00/0000</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span class="icon"></span>
+                <div class="quote-info">
+                    <p>Comercial</p>
+                    <p>00/00/0000</p>
+                </div>
+            </li>
+            <!-- Repite más elementos como sea necesario -->
+        </ul>
+    </aside>
+
+    <section class="details">
+        <div class="left-section">
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" placeholder="Nombre" [(ngModel)]="cotizacion.nombre">
+            </div>
+            <div class="form-group">
+                <label>Telefono</label>
+                <input type="text" placeholder="Telefono" [(ngModel)]="cotizacion.felefono">
+            </div>
+            <div class="form-group">
+                <label>Correo Electronico</label>
+                <input type="text" placeholder="Correo Electronico" [(ngModel)]="cotizacion.email">
+            </div>
+            <div class="form-group">
+                <label>Celular</label>
+                <input type="text" placeholder="Celular" [(ngModel)]="cotizacion.celular">
+            </div>
+            <div class="form-group">
+                <label>Localidad</label>
+                <input type="text" placeholder="Localidad" [(ngModel)]="cotizacion.localidad">
+            </div>
+            <div class="form-group">
+                <label>Código Postal</label>
+                <input type="text" placeholder="Código Postal" [(ngModel)]="cotizacion.codigopostal">
+            </div>
+            <div class="form-group">
+                <p>Fecha: 00/00/0000 &nbsp;&nbsp; No. 01</p>
+            </div>
+        </div>
+
+        <div class="right-section"> 
+            <h3>Pago de CFE (Si Aplica)</h3>
+            <div class="grid">
+                <div class="form-group">
+                    <label>B (kWh):</label>
+                    <input type="text" placeholder="B (kWh)" [(ngModel)]="cotizacion.bkWh">
+                </div>
+                <div class="form-group">
+                    <label>I (kWh):</label>
+                    <input type="text" placeholder="I (kWh)" [(ngModel)]="cotizacion.ikWh">
+                </div>
+                <div class="form-group">
+                    <label>P (kWh):</label>
+                    <input type="text" placeholder="P (kWh)" [(ngModel)]="cotizacion.pkWh">
+                </div>
+                <div class="form-group">
+                    <label>P. Transmisión:</label>
+                    <input type="text" placeholder="P. Transmisión" [(ngModel)]="cotizacion.ptranmision">
+                </div>
+                <div class="form-group">
+                    <label>C (mxn/kW):</label>
+                    <input type="text" placeholder="C (mxn/kW)" [(ngModel)]="cotizacion.cmxnkW">
+                </div>
+                <div class="form-group">
+                    <label>D (mxn/kW):</label>
+                    <input type="text" placeholder="D (mxn/kW)" [(ngModel)]="cotizacion.dmxnkW">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="button-group">
+    <button class="approve-button" (click)="aprobarCotizacion()">Aprobar</button>
+    <button class="reject-button" (click)="rechazarCotizacion()">Rechazar</button>
+</div>

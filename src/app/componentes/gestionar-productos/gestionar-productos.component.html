@@ -1,0 +1,25 @@
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h2 class="decorated-title">Planes</h2>
+        </div>        
+        <main>
+            <div class="card">
+                <h2>Residencial</h2>
+                <i class="fas fa-home"></i>
+                <button class="manage-button" [routerLink]="['/DetalleResidencia']">Gestionar Plan</button>
+            </div>
+            <div class="card">
+                <h2>Comercial</h2>
+                <i class="fas fa-building"></i>
+                <button class="manage-button" [routerLink]="['/DetalleComercio']">Gestionar plan</button>
+            </div>
+            <div class="card">
+                <h2>Industrial</h2>
+                <i class="fas fa-industry"></i>
+                <button class="manage-button" [routerLink]="['/DetalleIndustria']">Gestionar plan</button>
+            </div>
+        </main>
+        
+    </div>
+</body>

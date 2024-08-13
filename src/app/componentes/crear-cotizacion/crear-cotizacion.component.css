@@ -1,0 +1,13 @@
+.form-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.btn-spacing {
+    margin-right: 10px;
+}
+
+.btn-last-spacing {
+    margin-right: 0;
+}

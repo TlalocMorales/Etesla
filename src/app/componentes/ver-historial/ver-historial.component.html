@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ver-historial.component.css">
+</head>
+<body>
+    <div class="container">
+        <div class="table-container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2>Historial</h2>
+                <div class="search-box">
+                    <input class="form-control" type="text" placeholder="Search">
+                </div>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">B (kWh)</th>
+                        <th scope="col">I (kWh)</th>
+                        <th scope="col">P (kWh)</th>
+                        <th scope="col">P. Transmisión</th>
+                        <th scope="col">C (mxn/kW)</th>
+                        <th scope="col">D (mxn/kW)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cotizacion of cotizaciones">
+                        <td>{{ cotizacion.fecha }}</td>
+                        <td>{{ cotizacion.email }}</td>
+                        <td>{{ cotizacion.bkWh }}</td>
+                        <td>{{ cotizacion.ikWh }}</td>
+                        <td>{{ cotizacion.pkWh }}</td>
+                        <td>{{ cotizacion.ptranmision }}</td>
+                        <td>{{ cotizacion.cmxnkW }}</td>
+                        <td>{{ cotizacion.dmxnkW }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

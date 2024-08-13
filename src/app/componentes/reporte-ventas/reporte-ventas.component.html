@@ -1,0 +1,62 @@
+<main>
+    <h1>Generar Reporte</h1>
+    <div class="form-container">
+        <div class="left-column">
+            <div class="form-group">
+                <label for="tipo-reporte">Tipo de Reporte</label>
+                <select id="tipo-reporte">
+                    <option>Selecciona una Opción</option>
+                    <option>Ventas</option>
+                    <option>Empleados</option>
+                    <option>Placeholder</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tipo-plan">Tipo de Plan</label>
+                <select id="tipo-plan" formControlName="branch">
+                    <option>Selecciona una Opción</option>
+                    <option>Comercial</option>
+                    <option>Residencial</option>
+                    <option>Industrial</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="usuarios">Usuarios</label>
+                <select id="usuarios" formControlName="branch">
+                    <option>Selecciona una Opción</option>
+                    <option>Vendedores</option>
+                    <option>Administradores</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="regiones">Socursal</label>
+                <select id="regiones" formControlName="branch">
+                    <option>Selecciona una Opción</option>
+                    <option>Veracruz</option>
+                    <option>CDMX</option>
+                    <option>Puebla</option>
+                </select>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="date-group">
+                <div class="form-group">
+                    <label for="fecha-inicio">Fecha de Inicio</label>
+                    <input type="date" id="fecha-inicio" placeholder="DD/MM/AAAA">
+                </div>
+                <div class="form-group">
+                    <label for="fecha-fin">Fecha de Fin</label>
+                    <input type="date" id="fecha-fin" placeholder="DD/MM/AAAA">
+                </div>
+            </div>
+            <div class="observation">
+                <label for="observacion">Observación</label>
+                <textarea id="observacion" placeholder="Añade una Observación......."></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="button-group">
+        <button class="generate-button">Generar Reporte</button>
+        <button class="cancel-button">Cancelar</button>
+    </div>
+</main>
